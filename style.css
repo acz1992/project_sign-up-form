@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* General Styles */
+
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100vw;
+}
+
+body {
+	font-family: "Poppins", sans-serif, system-ui, "Segoe UI", Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.pic-card {
+	/* 	overflow: hidden;
+ */
+}
+
+img {
+	/* 		width: 33vw;
+	object-fit: cover;
+	object-position: 100% 0; */
+}
