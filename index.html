@@ -7,7 +7,7 @@
 		<title>Sign Up Form</title>
 	</head>
 	<body>
-		<!-- picture card -->
+		<!-- Picture Side -->
 
 		<div class="pic-container">
 			<div class="overlay">
@@ -23,42 +23,75 @@
 			</div>
 		</div>
 
-		<!-- text card -->
+		<!-- Text Side -->
 
-		<div class="txt-card">
+		<div class="text-card">
 			<header>
 				<h1>Create an Account</h1>
-				Fields marked with an asterik (*) are required
+				All fields are required
 			</header>
 			<form action="">
-				<div class="form-row">
-					<label for="first-name">First Name</label
-					><input type="text" name="first-name" id="first-name" />
-				</div>
-				<div class="form-row">
-					<label for="last-name">Last Name</label
-					><input type="text" name="last-name" id="last-name" />
-				</div>
-				<div class="form-row">
-					<label for="email">Email</label
-					><input type="email" name="email" id="email" />
-				</div>
-				<div class="form-row">
-					<label for="pgone-number">Phone Number</label
-					><input type="tel" name="phone-number" id="phone-number" />
-				</div>
-				<div class="form-row">
-					<label for="password">Password</label
-					><input type="password" name="password" id="password" />
-				</div>
-				<div class="form-row">
-					<label for="confirm-password">Confirm Password</label
-					><input
-						type="password"
-						name="confirm-password"
-						id="confirm-password"
-					/>
-				</div>
+				<fieldset class="name-inputs">
+					<div class="form-row">
+						<label for="first-name">First Name</label
+						><input
+							type="text"
+							name="first-name"
+							id="first-name"
+							placeholder="Please enter your first name"
+						/>
+					</div>
+					<div class="form-row">
+						<label for="last-name">Last Name</label
+						><input
+							type="text"
+							name="last-name"
+							id="last-name"
+							placeholder="Please enter your last name"
+						/>
+					</div>
+				</fieldset>
+				<fieldset class="email-phone-inputs">
+					<div class="form-row">
+						<label for="email">Email</label
+						><input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Please enter your email"
+						/>
+					</div>
+					<div class="form-row">
+						<label for="phone-number">Phone Number</label
+						><input
+							type="tel"
+							name="phone-number"
+							id="phone-number"
+							placeholder="Please enter your number"
+						/>
+					</div>
+				</fieldset>
+				<fieldset class="password-inputs">
+					<div class="form-row">
+						<label for="password">Password</label
+						><input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Please enter your password"
+						/>
+					</div>
+					<div class="form-row">
+						<label for="confirm-password">Confirm Password</label
+						><input
+							type="password"
+							name="confirm-password"
+							id="confirm-password"
+							class="error"
+							placeholder="Please confirm your password"
+						/>
+					</div>
+				</fieldset>
 			</form>
 			<div class="button-container">
 				<button>Create Account</button>
