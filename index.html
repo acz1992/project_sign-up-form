@@ -30,7 +30,7 @@
 				<h1>Create an Account</h1>
 				All fields are required
 			</header>
-			<form action="">
+			<form action="" method="post" id="signup-form" target="/">
 				<fieldset class="name-inputs">
 					<div class="form-row">
 						<label for="first-name">First Name</label
@@ -38,7 +38,8 @@
 							type="text"
 							name="first-name"
 							id="first-name"
-							placeholder="Please enter your first name"
+							placeholder="Enter your first name"
+							maxlength="50"
 						/>
 					</div>
 					<div class="form-row">
@@ -47,7 +48,8 @@
 							type="text"
 							name="last-name"
 							id="last-name"
-							placeholder="Please enter your last name"
+							placeholder="Enter your last name"
+							maxlength="50"
 						/>
 					</div>
 				</fieldset>
@@ -58,7 +60,9 @@
 							type="email"
 							name="email"
 							id="email"
-							placeholder="Please enter your email"
+							placeholder="Enter your email"
+							minlength="5"
+							maxlength="20"
 						/>
 					</div>
 					<div class="form-row">
@@ -67,7 +71,10 @@
 							type="tel"
 							name="phone-number"
 							id="phone-number"
-							placeholder="Please enter your number"
+							placeholder="Enter a UK number"
+							minlength="11"
+							maxlength="14"
+							pattern="[0][0-9]{10}"
 						/>
 					</div>
 				</fieldset>
@@ -78,7 +85,9 @@
 							type="password"
 							name="password"
 							id="password"
-							placeholder="Please enter your password"
+							placeholder="Enter your password"
+							minlength="5"
+							maxlength="20"
 						/>
 					</div>
 					<div class="form-row">
@@ -88,15 +97,24 @@
 							name="confirm-password"
 							id="confirm-password"
 							class="error"
-							placeholder="Please confirm your password"
+							placeholder="Confirm your password"
+							minlength="5"
+							maxlength="20"
 						/>
+						<div class="message-container">
+							<p id="message"></p>
+						</div>
+					</div>
+					<div class="message-container">
+						<p id="message"></p>
 					</div>
 				</fieldset>
 			</form>
 			<div class="button-container">
-				<button>Create Account</button>
+				<button type="submit">Create Account</button>
 				<p>Already have an account? <a href="">Log in</a></p>
 			</div>
 		</div>
+		<script src="password-confirm.js"></script>
 	</body>
 </html>

@@ -110,6 +110,10 @@ input:focus {
 	color: #c1c1c1;
 }
 
+#message {
+	padding-top: 10px;
+}
+
 .button-container {
 	padding-top: 30px;
 }
@@ -118,9 +122,14 @@ button {
 	background-color: #089436;
 	color: white;
 	font-family: inherit;
-	padding: 10px;
-	border-radius: 5px;
-	font-size: large;
+
+	padding: 12px 48px;
+	border-radius: 8px;
+	box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	color: white;
+	font-weight: 700;
+	font-size: 1.1rem;
 }
 
 button:hover:active {
@@ -133,5 +142,12 @@ button:active {
 }
 
 .button-container p {
-	padding-top: 10px;
+	padding-top: 15px;
+}
+
+input:invalid {
+	outline: none;
+	border: 1px solid #d55c5f;
+	color: #d55c5f;
+	box-shadow: none;
 }
